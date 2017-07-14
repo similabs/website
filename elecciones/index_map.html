@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="eleccionAngularApp">
+<!--<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74837275-1', 'auto');
+  ga('send', 'pageview');
+
+</script>-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SimiLabs - Entendiendo el lenguaje</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/animate.min.css" rel="stylesheet"> 
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/lightbox.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link id="css-preset" href="../css/presets/preset1.css" rel="stylesheet">
+  <link href="../css/responsive.css" rel="stylesheet">
+    <link href="css/styleMapPeru.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="../images/logo_white.png">
+</head><!--/head-->
+
+<body>
+
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
+
+  <header id="home">
+  <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <!-- <div class="caption">
+            <h1 class="animated fadeInLeftBig">Bienvenido a <span>SimiLabs</span></h1>
+            <p class="animated fadeInRightBig">Entendiendo el Lenguaje</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Comenzar</a>
+          </div> -->
+        </div>
+        <!-- <div class="item" style="background-image: url(images/slider/2.jpg)">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Startup <span>Peruana</span></h1>
+            <p class="animated fadeInRightBig">Innovando con Procesamiento del Lenguaje Natural</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Comenzar</a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(images/slider/3.jpg)">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig">Soluciones <span>Inteligentes</span></h1>
+            <p class="animated fadeInRightBig">Tecnología al servicio de los negocios</p>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Comenzar</a>
+          </div>
+        </div> -->
+      </div> 
+     <!--  <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+
+      <a id="tohash" href="#eleccionesTwitter"><i class="fa fa-angle-down"></i></a> -->
+
+    </div><!--/#home-slider-->
+    <div class="main-nav">
+      <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand"  href="index.html"><!--style="padding: 2px 20px;"-->
+            <!--<h1>--><img class="img-responsive" src="../images/similabs_logo_white.png" alt="logo"><!--</h1>-->
+          </a>   
+      </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll active"><a href="#home">Inicio</a></li>
+            <li class="scroll"><a href="#services">Servicios</a></li>            
+            <li class="scroll"><a href="#portfolio">Proyectos</a></li>
+            <li class="scroll"><a href="#about-us">Visión</a></li>  
+            <li class="scroll"><a href="#team">Equipo</a></li>        
+            <li class="scroll"><a href="#blog">Blog</a></li>
+            <li class="scroll"><a href="#contact">Contacto</a></li>       
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+
+  <section id="eleccionesTwitter">
+
+      <div class="row"  ng-controller="appController">
+          <div class="col-sm-6 col-md-4">
+              <h3>Lista de Candidatos a la Presidencia del Perú</h3>
+              <hr>
+              <div class="container est">
+                  <div class="row">
+                      <div class="col-xs-2 text-center"></div>
+                      <div class="col-xs-4"></div>
+                      <div class="col-xs-2"></div>
+                  </div>
+                  <div class="row tHi" ng-repeat="candidato in candidatos"  ng-click="showMapCandidate(candidato)">
+                      <div class="col-xs-2 text-right"><img title="{{candidato.name}}" src="images/{{candidato.partyId}}.jpg" class="img-thumbnail img-responsive" style="border-radius: 20px" height='65' width='65'></div>
+                      <div class="col-xs-4"><br>{{candidato.name}}<br><b>{{candidato.party}}</b></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-md-2"></div>
+          <div class="clearfix visible-sm"></div>
+          <div class="col-sm-6 col-md-4">
+              <div class="container est">
+                  <br>
+                  <br>
+                  <h3>{{candidatetitle}}<br><b>{{candidatoselection}}</b> <img src="images/{{candidatoselectionId}}.jpg"  class="img-thumbnail img-responsive img-circle" height='42' width='42'></h3>
+                  <br>
+                  <div id="chart">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+   <!-- <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+            <h2>Análisis de sentimiento de comentarios en Twitter</h2>
+          </div>
+        </div> 
+      </div>
+      <div class="text-center our-services">
+        <div class="row">
+          <div class="col-sm-8 wow fadeInDown" style="width: 100%;" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <script src="http://d3js.org/d3.v3.min.js"></script>
+                <script src="js/Donut3D.js"></script>
+                <script src="js/SentimentBar.js"></script> 
+                <svg class="chart"></svg>
+                <svg class="donut"></svg>
+          </div>
+        </div>
+      </div>
+    </div>-->
+  </section><!--/#eleccionesTwitter-->
+
+
+  <footer id="footer">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="container text-center">
+        <div class="footer-logo">
+          <a href="index.html"><img class="img-responsive" src="../images/similabs_logo_white.png" alt=""></a>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li><a class="envelope" href="mailto:similabs@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a class="facebook" href="https://www.facebook.com/similabs/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/simi_labs" target="_blank"><i class="fa fa-twitter"></i></a></li> 
+            <!--<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>    
+            <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p></p>
+          </div>
+          <div class="col-sm-6">
+            <p class="pull-right"></p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="../js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="../js/wow.min.js"></script>
+  <script type="text/javascript" src="../js/mousescroll.js"></script>
+  <script type="text/javascript" src="../js/smoothscroll.js"></script>
+  <script type="text/javascript" src="../js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/main2.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-resource.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+  <script src="js/load_datamap.js"></script>
+  <script src="js/map_peru.js"></script>
+
+
+</body>
+<style>
+
+    /*
+    .chart rect {
+      fill: steelblue;
+    }
+    */
+    .chart .legend {
+        fill: black;
+        font: 14px sans-serif;
+        text-anchor: start;
+        font-size: 12px;
+    }
+
+    .chart text {
+        fill: white;
+        font: 10px sans-serif;
+        text-anchor: end;
+    }
+
+    .chart .label {
+        fill: black;
+        font: 14px sans-serif;
+        font-weight: bold;
+        text-anchor: end;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+    }
+
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 120px !important;
+        height: 60px !important;
+        padding: 2px;
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 2px solid #e0e0d1;
+        border-radius: 8px;
+        border-color: #e0e0d1;
+        pointer-events: none;
+    }
+
+    .donut {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 400px;
+        height: 500px;
+        position: relative;
+    }
+    path.slice{
+        stroke-width:2px;
+    }
+    polyline{
+        opacity: .3;
+        stroke: black;
+        stroke-width: 2px;
+        fill: none;
+    }
+    svg text.percent{
+        fill:white;
+        text-anchor:middle;
+        font-size:12px;
+    }
+</style>
+</html>

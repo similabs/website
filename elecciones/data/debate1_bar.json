@@ -1,0 +1,110 @@
+{
+    "tweets": [
+        526, 
+        172, 
+        1327, 
+        603, 
+        556, 
+        2426, 
+        87, 
+        114, 
+        518, 
+        517, 
+        608, 
+        2274, 
+        26, 
+        18, 
+        85, 
+        430, 
+        488, 
+        2190, 
+        152, 
+        91, 
+        437, 
+        566, 
+        355, 
+        1954, 
+        274, 
+        275, 
+        1031, 
+        90, 
+        80, 
+        397
+    ], 
+    "series": [
+        {
+            "values": [
+                25.98, 
+                16.82, 
+                12.1, 
+                15.21, 
+                20.16, 
+                13.84, 
+                22.35, 
+                19.69, 
+                17.34, 
+                15.87
+            ], 
+            "label": "Positivos"
+        }, 
+        {
+            "values": [
+                8.49, 
+                15.51, 
+                15.86, 
+                17.89, 
+                13.95, 
+                15.7, 
+                13.38, 
+                12.35, 
+                17.41, 
+                14.11
+            ], 
+            "label": "Negativos"
+        }, 
+        {
+            "values": [
+                65.53, 
+                67.67, 
+                72.04, 
+                66.9, 
+                65.89, 
+                70.46, 
+                64.26, 
+                67.97, 
+                65.25, 
+                70.02
+            ], 
+            "label": "Neutros"
+        }
+    ], 
+    "images": [
+        "./images/accionpopular.jpg", 
+        "./images/alianzapopular.jpg", 
+        "./images/democraciadirecta.jpg", 
+        "./images/frenteamplio.jpg", 
+        "./images/frenteesperanza.jpg", 
+        "./images/fuerzapopular.jpg", 
+        "./images/partidopoliticoorden.jpg", 
+        "./images/peruanosporelcambio.jpg", 
+        "./images/peruposible.jpg", 
+        "./images/progresandoperu.jpg"
+    ], 
+    "labels": [
+        "Barnechea", 
+        "Garc\u00eda", 
+        "Santos", 
+        "Mendoza", 
+        "Olivera", 
+        "Fujimori", 
+        "Flores", 
+        "Kuczynski", 
+        "Toledo", 
+        "Hilario"
+    ], 
+    "summary": [
+        3271, 
+        2757, 
+        12639
+    ]
+}

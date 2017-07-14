@@ -1,0 +1,46 @@
+{
+    "tweets": [
+        685, 
+        1000, 
+        3570, 
+        947, 
+        941, 
+        3829
+    ], 
+    "series": [
+        {
+            "values": [
+                13.04, 
+                16.56
+            ], 
+            "label": "Positivos"
+        }, 
+        {
+            "values": [
+                19.03, 
+                16.46
+            ], 
+            "label": "Negativos"
+        }, 
+        {
+            "values": [
+                67.94, 
+                66.98
+            ], 
+            "label": "Neutros"
+        }
+    ], 
+    "images": [
+        "./images/fuerzapopular.jpg", 
+        "./images/peruanosporelcambio.jpg"
+    ], 
+    "labels": [
+        "Keiko", 
+        "PPK"
+    ], 
+    "summary": [
+        1632, 
+        1941, 
+        7399
+    ]
+}

@@ -1,0 +1,103 @@
+/*.main-content{
+    width: 90px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}*/
+.map {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.qpos0-9 { fill:#3A8F10; }/*positivo*/
+.qpos1-9 { fill:#9ACD32; }
+.qpos2-9 { fill:#EEDD82; }
+.qpos3-9 { fill:#EEDD82; }
+.qpos4-9 { fill:#EEDD82; }
+
+.qneg0-9 { fill:#FF0000; }/*negativo*/
+.qneg1-9 { fill:#FF6347; }
+.qneg2-9 { fill:#EEDD82; }
+.qneg3-9 { fill:#EEDD82; }
+.qneg4-9 { fill:#EEDD82; }
+
+.qlago { fill:#00CED1; }
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+.label {
+    font-weight: bold;
+    text-anchor: middle;
+    cursor:default;
+}
+
+div.tooltipMap {
+    position: absolute;
+    text-align: center;
+    padding: 4px;
+    background: #fff;
+    border: 0px;
+    pointer-events: none;
+}
+/*
+#timeline{
+    width: 750px;
+    margin: 0 auto;
+}
+/* basic styling for the time-series elements */
+/*.time-series {
+    width:50px;
+    background: #eee;
+    margin:0;
+    padding:0;
+    text-align:center;
+    line-height: 30px;
+    float: left;
+}*/
+/* styles for the active time-series element */
+.active {
+    background: #b4b4b4;
+    color:white;
+}
+/* styles for the trend information */
+.trend {
+    font-weight: bold;
+    font-size: 110%;
+}
+.pos {
+    color: #1a9850;
+}
+.neg {
+    color: #d73027;
+}
+.tHi:hover
+{
+    cursor: pointer;
+    background-color: #B0B0B0 !important;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .est {
+        max-width: 930px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+

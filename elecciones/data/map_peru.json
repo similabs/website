@@ -1,0 +1,982 @@
+{
+    "frenteesperanza": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }, 
+    "progresandoperu": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }, 
+    "alianzapopular": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 75.0, 
+            "negativo": 25.0
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 50.0, 
+            "negativo": 50.0
+        }, 
+        "Piura": {
+            "positivo": 100.0, 
+            "negativo": 0.0
+        }
+    }, 
+    "peruanosporelcambio": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 40.0, 
+            "negativo": 60.0
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }, 
+    "frenteamplio": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 20.0, 
+            "negativo": 80.0
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 60.0, 
+            "negativo": 40.0
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }, 
+    "peruposible": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0.0, 
+            "negativo": 100.0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 66.67, 
+            "negativo": 33.33
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 28.57, 
+            "negativo": 71.43
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }, 
+    "fuerzapopular": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0.0, 
+            "negativo": 100.0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lambayeque": {
+            "positivo": 0.0, 
+            "negativo": 100.0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0.0, 
+            "negativo": 100.0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 100.0, 
+            "negativo": 0.0
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }, 
+    "partidopoliticoorden": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 100.0, 
+            "negativo": 0.0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 50.0, 
+            "negativo": 50.0
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }, 
+    "accionpopular": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 100.0, 
+            "negativo": 0.0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 100.0, 
+            "negativo": 0.0
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 100.0, 
+            "negativo": 0.0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 25.0, 
+            "negativo": 75.0
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }, 
+    "democraciadirecta": {
+        "Pasco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Loreto": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Jun\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ayacucho": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ancash": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "San Mart\u00edn": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Hu\u00e1nuco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Arequipa": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Madre de Dios": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cusco": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lambayeque": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "La Libertad": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Apur\u00edmac": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Amazonas": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Ucayali": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Puno": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tumbes": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Moquegua": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Cajamarca": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Tacna": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Huancavelica": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Lima": {
+            "positivo": 0, 
+            "negativo": 0
+        }, 
+        "Piura": {
+            "positivo": 0, 
+            "negativo": 0
+        }
+    }
+}

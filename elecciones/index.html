@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SimiLabs - Entendiendo el lenguaje</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/lightbox.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link id="css-preset" href="../css/presets/preset1.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="../images/logo_white.png">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+    <style>
+      path {
+      stroke: #fff;
+      fill-rule: evenodd;
+      }
+      text {
+      font-size: 12px;
+      }
+      /*
+      .chart rect {
+      fill: steelblue;
+      }
+      */
+      #bar_sentiment {
+      max-width: 550px;
+      /*margin:2%;
+      padding:20px;
+      border:2px solid #d0d0d0;
+      border-radius: 5px;*/
+      }
+      #bar_sentiment .legend {
+      fill: black;
+      font: 14px sans-serif;
+      text-anchor: start;
+      font-size: 12px;
+      }
+      #bar_sentiment text {
+      fill: white;
+      font: 10px sans-serif;
+      text-anchor: end;
+      }
+      #bar_sentiment .label {
+      fill: black;
+      font: 14px sans-serif;
+      font-weight: bold;
+      text-anchor: end;
+      }
+      .axis path,
+      .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+      }
+      div.tooltip {
+      position: absolute;
+      text-align: center;
+      width: 120px !important;
+      height: 60px !important;
+      padding: 2px;
+      font: 12px sans-serif;
+      background: lightsteelblue;
+      border: 2px solid #e0e0d1;
+      border-radius: 8px;
+      border-color: #e0e0d1;
+      pointer-events: none;
+      }
+      .donut {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: 400px;
+      height: 500px;
+      position: relative;
+      }
+      path.slice{
+      stroke-width:2px;
+      }
+      polyline{
+      opacity: .3;
+      stroke: black;
+      stroke-width: 2px;
+      fill: none;
+      }
+      /*svg text.percent{
+      fill:white;
+      text-anchor:middle;
+      font-size:12px;
+      }*/
+      /*body {
+      font: 10px sans-serif;
+      }*/
+      .axisMultiLineChart path,
+      .axisMultiLineChart line{
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+      }
+      .line {
+      fill: none;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+      }
+      text {
+      font-size: 11px;
+      }
+    </style>
+  </head>
+  <!--/head-->
+  <body>
+    <!--.preloader-->
+    <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+    <!--/.preloader-->
+    <header id="home">
+      <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+          </div>
+        </div>
+      </div>
+      <!--/#home-slider-->
+      <div class="main-nav">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand"  href="../index.html">
+              <!--style="padding: 2px 20px;"-->
+              <!--<h1>--><img class="img-responsive" src="../images/similabs_logo_white.png" alt="logo"><!--</h1>-->
+            </a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="scroll active"><a href="../index.html">Inicio</a></li>
+              <li class="scroll"><a href="../index.html#services">Servicios</a></li>
+              <li class="scroll"><a href="../index.html#portfolio">Proyectos</a></li>
+              <li class="scroll"><a href="../index.html#about-us">Visión</a></li>
+              <li class="scroll"><a href="../index.html#team">Equipo</a></li>
+              <li class="scroll"><a href="../index.html#blog">Blog</a></li>
+              <li class="scroll"><a href="../index.html#contact">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--/#main-nav-->
+    </header>
+    <!--/#home-->
+    <section id="eleccionesTwitter">
+      <div class="container">
+        <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+          <div class="row">
+            <div class="col-sm-3" align="center"><a href="debate2.html">Ver Segundo Debate</a> </div>
+            <div class="text-center col-sm-6">
+              <h2>Análisis de Opinión en Twitter</h2>
+              <h3>Primer Debate Presidencial 2016 (18667 tuits)</h3>
+            </div>
+            <div class="col-sm-3" align="center"><a href="debate3.html">Ver Tercer Debate</a> </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <b>
+              <center>Sentimiento General</center>
+            </b>
+            <p align="justify">El día 3 de Abril del 2016 se realizó el primer debate presidencial, el duelo no solo se dio entre los candidatos presidenciales sino también entre los seguidores de éstos en las redes sociales. </p>
+            <p align="justify">El equipo de SimiLabs analizó las reacciones de los seguidores durante el debate en una de las redes sociales más conocidas: Twitter. Para esto se desarrolló un algoritmo adaptado al lenguaje peruano que nos permite conocer si un tuit está a favor o en contra de un candidato en particular</p>
+            <p align="justify">En el siguiente diagrama se puede ver la proporción de tuits positivos, negativos y neutros de cada candidato (pasando el cursor por cada barra es posible ver la cantidad de tuits que mencionaron al candidato).</p>
+            <div id="bar_sentiment"></div>
+            <br><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 wow fadeInDown" style="width: 100%;" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <b>
+              <center>Minuto a Minuto</center>
+            </b>
+            <p align="justify">Durante las 7pm y las 9:30pm, mientras se desarrollada el debate, se dio la mayor cantidad de comentarios por parte de los seguidores. Debido a esto es que se desagregó el primer diagrama y presentamos el minuto a minuto del debate que jugaron los seguidores en Twitter. Para este minuto a minuto seleccionamos los tres candidatos más populares los cuales son Keiko, Pedro Pablo y Verónika. Pasando el cursor por el diagrama es posible ver el porcentaje de comentarios positivos y negativos de cada candidato. </p>
+            <div class="row">
+              <b>
+                <center>Positivo</center>
+              </b>
+              <div id="timeline_positive"></div>
+            </div>
+            <div class="row">
+              <b>
+                <center>Negativo</center>
+              </b>
+              <div id="timeline_negative"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 wow fadeInDown" style="width: 100%;" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <b>
+              <center>Tópicos Más Importantes</center>
+            </b>
+            <p align="justify">En SimiLabs queremos ir un paso más allá. En los siguientes diagramas mostramos aquellos tópicos que son más mencionados tanto en los tuits positivos como en los negativos. De igual manera que en la sección anterior nos enfocamos en los tres candidatos más populares. Haciendo clic en cada sección (positivo y negativo) es posible ver  con mayor detalle los tópicos encontrados por nuestro algoritmo.</p>
+            <div class="col-md-4">
+              <div id="piechart-Keiko"></div>
+            </div>
+            <div class="col-md-4">
+              <div id="piechart-PPK"></div>
+            </div>
+            <div class="col-md-4">
+              <div id="piechart-Veronika"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="jquery-script-menu">
+            <br><br> 
+            <b>
+              <center>Comentarios Ejemplos</center>
+            </b>
+            <br>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><b>Keiko Fujimori</b></div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <ul class="demo1">
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/positive_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@KeikoFujimori segura, convincente, ¡Orgullosa de mi lideresa! #VamosKeiko... <a href="https://twitter.com/g_soriacruz/status/716800309092347904" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/negative_icon.png" width="60" class="img-circle" /></td>
+                                  <td>Qué pena que las dos únicas mujeres candidatas sean @KeikoFujimori y @Vero_Mendoza_F  ???... <a href="https://twitter.com/bren_pup/status/716812075645976576" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/neutral_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@KeikoFujimori responde a Hilario con cierta condescendencia, hasta con compasiòn. Buen pata... <a href="https://twitter.com/eudmed/status/716799048011874304" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/positive_icon.png" width="60" class="img-circle" /></td>
+                                  <td>keiko amigo el pueblo esta contigo #VamoskeikoVamos #VamoskeikoVamos... <a href="https://twitter.com/CubaBernaldo/status/716804593339011072" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/negative_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@KeikoFujimori por qué te indignas cuándo te recuerdan q gobierno de tu api fue el más corrupto... <a href="https://twitter.com/moni_cc/status/716800396468088833" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/neutral_icon.png" width="60" class="img-circle" /></td>
+                                  <td>El turno de @KeikoFujimori en el #DebatePresidencial2016 @RPPNoticias... <a href="https://twitter.com/eddysalinas/status/716786199361372164" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer"> </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><b>Pedro Pablo Kuczynski </b></div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <ul class="demo1">
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/positive_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@ppkamigo buena propuesta! El Agua potable! Para todos!!! Sin discriminación... <a href="https://twitter.com/chocherita64/status/716801855423180800" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/negative_icon.png" width="60" class="img-circle" /></td>
+                                  <td>#debatepresidencial @ppkamigo solo lee. Será porque el debate es en español? Ya parece... <a href="https://twitter.com/alexovar23/status/716782124381155328" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/neutral_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@restaurando11 @ppkamigo ni favorecer a las universidades ni al ejecutivo a través de las.. <a href="https://twitter.com/Al_oliva1995/status/716805275806777344" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/positive_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@ppkamigo buena PPK, fuerte y claro! Demostrando por qué es la mejor opción!??... <a href="https://twitter.com/yoany29/status/716807712894558208" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/negative_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@ppkamigo ..apagate oye ciudadano gringo TU ERES PEON Y AGENTE DE LAS TRANSNACIONALES... <a href="https://twitter.com/ChipNICOLAS/status/716803362000400384" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/neutral_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@ppkamigo y @Antero2016 se saludan luego de su mini debate"". @spaciolibre... <a href="https://twitter.com/AndyNeyraY/status/716794328409063424" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer"> </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><b>Verónika Mendoza</b></div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <ul class="demo1">
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/positive_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@Vero_Mendoza_F será una excelente presidenta, sin duda. #VamosVero #VeroPresidenta... <a href="https://twitter.com/albertohidalgo/status/716791112082579457" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/negative_icon.png" width="60" class="img-circle" /></td>
+                                  <td>Que no quiso responder #RojoNoComeRojo @Vero_Mendoza_F https://t.co/23VMPTRDoG... <a href="https://twitter.com/jcpacheco00/status/716797674666737664" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/neutral_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@RPPNoticias @AlejandroToledo @Vero_Mendoza_F  Toledo presidente... <a href="https://twitter.com/maferyou/status/716788833875062785" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/positive_icon.png" width="60" class="img-circle" /></td>
+                                  <td>#debatepresidencial Cómo diría el Puma @Vero_Mendoza_F está bien bonitaaaaaaa!!!... <a href="https://twitter.com/luispalma07/status/716784467709394944" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/negative_icon.png" width="60" class="img-circle" /></td>
+                                  <td>Y la tía @Vero_Mendoza_F con su blusa roja... Sólo le falta la Hoz y El Martillo... <a href="https://twitter.com/claudiadnll/status/716779947105329152" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                            <li class="news-item">
+                              <table cellpadding="4">
+                                <tr>
+                                  <td><img src="images/neutral_icon.png" width="60" class="img-circle" /></td>
+                                  <td>@padelriol @Vero_Mendoza_F emocionados por q hablo en quechua hay dios... <a href="https://twitter.com/fajardocesar677/status/716786705639063552" target="_blank">Leer más...</a></td>
+                                </tr>
+                              </table>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container end-->
+    </section>
+    <!--/#eleccionesTwitter-->
+    <footer id="footer">
+      <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="container text-center">
+          <div class="footer-logo">
+            <a href="../index.html"><img class="img-responsive" src="../images/similabs_logo_white.png" alt=""></a>
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li><a class="envelope" href="mailto:similabs@gmail.com"><i class="fa fa-envelope"></i></a></li>
+              <li><a class="facebook" href="https://www.facebook.com/similabs/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/simi_labs" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="../js/wow.min.js"></script>
+    <script type="text/javascript" src="../js/mousescroll.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+    <script type="text/javascript" src="../js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="../js/lightbox.min.js"></script>
+    <script type="text/javascript" src="../js/main2.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/donut3d_sentiment.js"></script>
+    <script type="text/javascript" src="js/bar_sentiment.js"></script>
+    <script type="text/javascript" src="js/timeline_sentiment.js"></script>
+    <script type="text/javascript" src="js/piechart_sentiment.js"></script>
+    <script type="text/javascript">
+      bar_sentiment.draw_chart("#bar_sentiment", "data/debate1_bar.json")
+      timeline_sentiment.draw_chart("#timeline_positive", "data/debate1_timeline_positive.tsv", "positive_line");
+      timeline_sentiment.draw_chart("#timeline_negative", "data/debate1_timeline_negative.tsv", "negative_line");
+      pie_sentiment.draw_chart("#piechart-Keiko", "data/debate1_pie_keiko.json", "#ff7f0e");
+      pie_sentiment.draw_chart("#piechart-PPK", "data/debate1_pie_ppk.json", "#f131ec");
+      pie_sentiment.draw_chart("#piechart-Veronika", "data/debate1_pie_veronika.json", "#0faa0d");
+        $(function () {
+            $(".demo1").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+                pauseOnHover:true,
+                direction: 'up',
+                newsTickerInterval: 4000,
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+            
+            $(".demo2").bootstrapNews({
+                newsPerPage: 4,
+                autoplay: true,
+                pauseOnHover: true,
+                navigation: false,
+                direction: 'down',
+                newsTickerInterval: 2500,
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+        
+            $(".demo3").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: false,
+                
+                onToDo: function () {
+                    //console.log(this);
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-74837275-1', 'auto');
+      ga('send', 'pageview');
+      
+    </script>
+  </body>
+</html>
